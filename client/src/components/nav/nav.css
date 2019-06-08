@@ -1,0 +1,82 @@
+nav ul{
+		list-style: none;
+		padding: 20px 50px 20px 20px;
+		/*background: #444;*/
+		background: #A9A9A9;
+	}
+	
+	nav ul li a{
+		color: #32CD32;		
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: .8rem 1rem;
+		display: block;
+		line-height: 1;
+	}
+	
+	nav ul li{
+		border-bottom: 1px dotted #ddd;
+	}
+	
+	/* Logo */
+	
+	nav div:first-child{
+		background: #222;
+		
+	}
+	
+	nav div:first-child h1{
+		line-height:0;
+		padding: .8rem 0rem;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+	}
+	nav div:first-child img{
+		filter: contrast(0);
+		
+	}
+	
+	/*to remove spaces aroung the logo*/
+	nav div:first-child h1, nav ul{
+		margin:0;
+	}
+
+	
+	/*larger screen*/
+	
+	@media only screen and (min-width:30em){
+		nav {
+			display: flex;
+			justify-content: space-between;
+			/*background: #222;*/
+			background:#696969;
+			align-items: center;
+		}
+		
+		nav ul{
+			display: flex;
+			align-items: center;
+			background: none;
+			flex-wrap: wrap;
+		}
+				
+		nav div:first-child h1{
+			padding: 0 0 0 50px;
+			margin: 0 1rem;
+			color: #32CD32;
+			text-decoration: none;
+			flex-wrap: wrap;
+		}
+		
+		nav div:first-child img{
+			height: 50px;
+		}
+		nav ul li{
+			border-bottom: none;
+		}
+		nav ul li a{
+			padding:1.2rem 1 rem;
+		}
+	}

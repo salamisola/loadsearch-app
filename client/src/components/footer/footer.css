@@ -1,0 +1,30 @@
+#footer {
+    padding: 2rem 0 0.1rem 0 ;
+    text-align: center;
+    /*background: #222;*/
+    background: #696969;
+}
+
+    #footer a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+#footer a:hover {
+    color: #FF4500;;
+}
+
+    #footer .copyright {
+        color: #32CD32;
+        font-size: 16px;
+        margin: 0 0 2rem 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #footer {
+            padding: 1rem 0 0.1rem 0 ;
+        }
+
+    }
