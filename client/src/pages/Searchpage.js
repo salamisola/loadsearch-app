@@ -36,6 +36,7 @@ class Searchpage extends Component {
                     message: "No Loads Found, Try Different Search Parameters"
                 })
             );
+        console.log(this.state.loads)
     };
 
     handleFormSubmit = event => {
@@ -64,6 +65,10 @@ class Searchpage extends Component {
                     handleFormSubmit={this.handleFormSubmit} equipment={this.state.equipment}
                     distance={this.state.distance} rate={this.state.rate} />
                 <h1>Search Page</h1>
+                {/*  <ul> */}
+
+                {/* {!this.state.loads.length}
+                <div><p>No results to display</p></div> */}
                 <ul>
                     {this.state.loads.map(load => (
                         <li key={load._id}>
@@ -72,6 +77,15 @@ class Searchpage extends Component {
                         </li>
                     ))}
                 </ul>
+
+                {/* {this.state.loads.map(load => (
+                        <li key={load._id}>
+
+                            {load.rate}: {load.equipment}:{load.distance}
+                    </li> */}
+
+                ))}
+               {/*  </ul> */}
                 <Footer />
             </div >
 
