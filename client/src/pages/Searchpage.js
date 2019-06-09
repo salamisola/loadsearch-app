@@ -58,14 +58,27 @@ class Searchpage extends Component {
     render() {
         return (
             <div>
+
                 <Nav />
                 <Searchpagecontainer handleLoadSave={this.handleLoadSave} handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit} equipment={this.state.equipment}
-                    distance={this.state.disctance} rate={this.state.rate} />
+                    distance={this.state.distance} rate={this.state.rate} />
                 <h1>Search Page</h1>
+                <ul>
+                    {this.state.loads.map(load => (
+                        <li key={load._id}>
+
+                            {load.rate}: {load.equipment}:{load.distance}
+                        </li>
+                    ))}
+                </ul>
                 <Footer />
-            </div>
+            </div >
+
         )
+
+
+
     }
 }
 export default Searchpage;

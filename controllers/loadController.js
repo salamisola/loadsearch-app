@@ -16,13 +16,13 @@ module.exports = {
     find: function (req, res) {
         let equipment_query = "";
         if (req.params.equipment == "container_refrigerated") {
-            equipment_query = "Container Refrigerated";
+            equipment_query = "container_efrigerated";
         } else if (req.params.equipment == "container_double") {
-            equipment_query = "Container Double";
+            equipment_query = "container_double";
         } else if (req.params.equipment == "dry_van") {
-            equipment_query = "Dry Van";
+            equipment_query = "dry_van";
         } else if (req.params.equipment == "dump_trailer") {
-            equipment_query = "Dump Trailer";
+            equipment_query = "dump_trailer";
         } else if (req.params.equipment == "flatbed") {
             equipment_query = "Flatbed";
         } else if (req.params.equipment == "lowboy") {
@@ -33,7 +33,7 @@ module.exports = {
             equipment_query = "Tanker";
         }
 
-
+        let distance_query = "";
         if (req.params.distance == 1) {
             distance_query = { $lt: 201, $gt: 0 };
         } else if (req.params.distance == 2) {
@@ -54,14 +54,22 @@ module.exports = {
         }
 
 
-        db.Load.find({
+        /* db.Load.find({
             equipment: { equipment_query },
             distance: distance_query,
             rate: rate_query
         }).then(dbLoad => res.json(dbLoad))
             .catch(err => res.status(422).json(err));
+    }, */
 
+        db.Load.find({
+            equipment: equipment_query,
+            distance: distance_query,
+            rate: rate_query
+        }).then(dbLoad => res.json(dbLoad))
+            .catch(err => res.status(422).json(err));
     },
+
     //==============================??
     findAll: function (req, res) {
         db.Load.find({ equipment: (req.param.equipment), distance: (req.param.distance), rate: (req.param.rate) })

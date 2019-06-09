@@ -11,13 +11,13 @@ function Nav() {
                 </div>
                 <ul>
                     <li>
-                        <a href="..\Home.js">Home</a>
+                        <a href="..">Home</a>
                     </li>
                     <li>
-                        <a href="..\Searchpage.js">Search Page</a>
+                        <a href="..\Searchpage">Search Page</a>
                     </li>
                     <li>
-                        <a href="..\Profilepage.js">Profile Page</a>
+                        <a href="..\Profilepage">Profile Page</a>
                     </li>
                 </ul>
             </nav>
