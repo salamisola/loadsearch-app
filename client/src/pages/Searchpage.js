@@ -4,8 +4,9 @@ import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/footer/Footer";
 import Searchpagecontainer from "../components/containers/Searchpagecontainer";
 import API from "../utils/API";
-import { Col, Row, Container } from "../components/Grid";
-import { List, ListItem } from "../components/List";
+import Table from "../components/Table";
+/* import { Col, Row, Container } from "../components/Grid";
+import { List, ListItem } from "../components/List"; */
 
 class Searchpage extends Component {
     state = {
@@ -63,30 +64,15 @@ class Searchpage extends Component {
         return (
             <div>
                 <Nav />
+                <Table />
                 <Searchpagecontainer handleLoadSave={this.handleLoadSave} handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit} equipment={this.state.equipment}
                     distance={this.state.distance} rate={this.state.rate} />
                 <h1>Load Search Results</h1>
-                <Jumbotron>
-                    <list>
-                        <grid>
-                            <row>
-                                <col>
-                                    <ul>
-                                        {this.state.loads.map(load => (
-                                            <ListItem key={book._id}>
-                                                {/* <li key={load._id}> */}
-                                                {load.rate}:{load.equipment}:{load.distance}
-                                            </ListItem>
-                                            /* </li> */
-                                        ))}
+                <Table state={this.state.loads} />
 
-                                    </ul>
-                                </col>
-                            </row>
-                        </grid>
-                    </list>
-                </Jumbotron>
+
+
                 <Footer />
             </div >
         )
