@@ -5,6 +5,8 @@ import Footer from "../components/footer/Footer";
 import Searchpagecontainer from "../components/containers/Searchpagecontainer";
 import API from "../utils/API";
 import Table from "../components/Table";
+/* import "../style.css" */
+
 /* import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List"; */
 
@@ -64,12 +66,16 @@ class Searchpage extends Component {
         return (
             <div>
                 <Nav />
-                <Table />
+
                 <Searchpagecontainer handleLoadSave={this.handleLoadSave} handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit} equipment={this.state.equipment}
                     distance={this.state.distance} rate={this.state.rate} />
+
                 <h1>Load Search Results</h1>
-                <Table state={this.state.loads} />
+                {/* <Jumbotron> */}
+                <Table data={this.state.loads} />
+                {/* </Jumbotron> */}
+
 
 
 
