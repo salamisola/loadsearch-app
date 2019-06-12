@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 import Nav from "../components/nav/Nav";
-import Jumbotron from "../components/Jumbotron";
+/* import Jumbotron from "../components/Jumbotron"; */
 import Footer from "../components/footer/Footer";
 import Searchpagecontainer from "../components/containers/Searchpagecontainer";
 import API from "../utils/API";
 import Table from "../components/Table";
+/* import Jumbotron from '../components/Jumbotron'; */
 /* import "../style.css" */
 
-/* import { Col, Row, Container } from "../components/Grid";
-import { List, ListItem } from "../components/List"; */
-
 class Searchpage extends Component {
-    state = {
 
+    state = {
         equipment: "reefer",
         distance: "1",
         rate: "low",
@@ -50,39 +48,34 @@ class Searchpage extends Component {
         this.getLoads();
     };
 
-    handleLoadSave = id => {
-        const load = this.state.loads.find(load => load.id === id);
+    // "LoadSave" to be used later
+    /*handleLoadSave = id => {
+        const load = this.state.loads.find(load => load.id === id); */
 
-        API.saveLoad({
-            LoadId: load.id,
-            equipment: load.equipment,
-            distance: load.distance,
-            rate: load.rate,
-            link: load.loadInfoLink,
-        }).then(() => this.getLoads());
-    };
-
+    /*   API.saveLoad({
+          LoadId: load.id,
+          equipment: load.equipment,
+          distance: load.distance,
+          rate: load.rate,
+          link: load.loadInfoLink,
+      }).then(() => this.getLoads());
+  }; */
     render() {
         return (
             <div>
                 <Nav />
-
                 <Searchpagecontainer handleLoadSave={this.handleLoadSave} handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit} equipment={this.state.equipment}
                     distance={this.state.distance} rate={this.state.rate} />
-
-                <h1>Load Search Results</h1>
-                {/* <Jumbotron> */}
-                <Table data={this.state.loads} />
-                {/* </Jumbotron> */}
-
-
-
-
+                <div className="Searchpage">
+                    <p className="Table-header">Load Search Results</p>
+                    <Table data={this.state.loads} />
+                </div>
                 <Footer />
             </div >
         )
     }
 }
+
 export default Searchpage;
 

@@ -19,6 +19,9 @@ function Nav() {
                     <li>
                         <a href="..\Profilepage">Profile Page</a>
                     </li>
+                    <li>
+                        <a href="..\Bloghome">Blogs Page</a>
+                    </li>
                 </ul>
             </nav>
             <br /> <br />

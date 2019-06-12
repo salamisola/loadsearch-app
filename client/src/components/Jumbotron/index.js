@@ -10,5 +10,4 @@ function Jumbotron({ children }) {
     </div>
   );
 }
-
 export default Jumbotron;
