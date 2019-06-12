@@ -6,14 +6,12 @@ function Homepagecontainer() {
         <div className="container">
             <form className="well form-horizontal" action=" " method="post" id="contact_form">
                 <fieldset>
-
                     <legend>
                         <center>
                             <h2><b>Login Page</b></h2>
                         </center>
                     </legend>
                     <br />
-
                     <div className="form-group">
                         <label className="col-md-4 control-label">Username</label>
                         <div className="col-md-4 inputGroupContainer">
@@ -22,7 +20,6 @@ function Homepagecontainer() {
                             </div>
                         </div>
                     </div>
-
                     <div className="form-group">
                         <label className="col-md-4 control-label">Password</label>
                         <div className="col-md-4 inputGroupContainer">
@@ -31,11 +28,9 @@ function Homepagecontainer() {
                             </div>
                         </div>
                     </div>
-
                     <div className="alert alert-success" role="alert" id="success_message">Success
                         <i className="glyphicon glyphicon-thumbs-up"></i> Success!.
                         </div>
-
                     <div className="form-group">
                         <label className="col-md-4 control-label"></label>
                         <div className="col-md-4"><br />
@@ -44,23 +39,15 @@ function Homepagecontainer() {
                             </button>
                         </div>
                     </div>
-
-
                     <div className="col-md-4"><br />
-
                         <button type="submit" className="btn btn-success">New User Registration
                                 <span className="glyphicon glyphicon-user"></span>
                         </button>
                     </div>
-                    {/*  </div> */}
-
                 </fieldset>
             </form>
-
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
         </div>
-
-
     )
 }
 

@@ -6,8 +6,7 @@ function Nav() {
         <div>
             <nav>
                 <div >
-                    {/* <!--h1><a href="#"><img src="C:/xampp/htdocs/sola/Website/hw2/hw2/Bootstrap-Portfolio/assets/images/adesola.jpg" alt="Adesola Salami"/></a></h1-->
-				<h1><!--a href="#"><img src="C:\xampp\htdocs\sola\Website\Final\images\logo2.png" alt="Adesola Salami" /></a--> */} Load Search
+                    Load Search
                 </div>
                 <ul>
                     <li>

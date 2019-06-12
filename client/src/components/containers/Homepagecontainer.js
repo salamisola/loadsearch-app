@@ -5,7 +5,6 @@ function Homepagecontainer() {
         <div className="container">
             {/* <form className="well form-horizontal" action=" " method="post" id="contact_form"> */}
             <fieldset>
-
                 <legend>
                     <center>
                         <h2><b>Home Page</b></h2>
@@ -22,7 +21,6 @@ function Homepagecontainer() {
                             <a href="C:\xampp\htdocs\sola\Website\Final\Giphy-API\index.html" className="button fit">Read More...</a>
                         </div>
                     </div>
-
                     <div className="box">
                         <a href="C:\xampp\htdocs\sola\Website\Final\TrainTracker\index.html" className="image fit">{/* <img src="C:\xampp\htdocs\sola\Website\Final\assets\images\train-700X525.png" alt="" /> */}</a>
                         <div className="inner">

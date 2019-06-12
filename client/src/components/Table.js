@@ -15,7 +15,6 @@ class Table extends Component {
                 <BootstrapTable data={this.props.data} headerStyle={{ background: '#ffffff', color: '#000000' }} tableStyle={{ background: '#ffffff', color: '#000000' }}>
                     <TableHeaderColumn isKey dataField='rate'
                         dataAlign='center'
-                        width="15%"
                         headerAlign="center"
                         width="15%"
                         thStyle={
@@ -24,7 +23,6 @@ class Table extends Component {
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='radius'
                         dataAlign='center'
-                        width="15%"
                         headerAlign="center"
                         width="15%"
                         thStyle={
@@ -33,7 +31,6 @@ class Table extends Component {
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='destination'
                         dataAlign='center'
-                        width="20%"
                         headerAlign="center"
                         width="20%"
                         thStyle={
@@ -42,7 +39,6 @@ class Table extends Component {
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='equipment'
                         dataAlign='center'
-                        width="20%"
                         headerAlign="center"
                         width="20%"
                         thStyle={
@@ -51,7 +47,6 @@ class Table extends Component {
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='rate_total'
                         dataAlign='center'
-                        width="15%"
                         headerAlign="center"
                         width="15%"
                         thStyle={
@@ -60,7 +55,6 @@ class Table extends Component {
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='distance'
                         dataAlign='center'
-                        width="15%"
                         headerAlign="center"
                         width="15%"
                         thStyle={
