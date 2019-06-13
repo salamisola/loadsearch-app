@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', 'https://tranquil-mountain-82429.herokuapp.com');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -39,7 +39,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/loadsearchdb",
+    process.env.MONGODB_URI || "mongodb://heroku_l72pd6g6:e51ho5enhva9t5m12g0hq2eiet@ds237357.mlab.com:37357/heroku_l72pd6g6",
     {
         useCreateIndex: true,
         useNewUrlParser: true
